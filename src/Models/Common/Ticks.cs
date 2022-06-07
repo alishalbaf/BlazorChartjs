@@ -13,6 +13,24 @@ namespace PSC.Blazor.Components.Chartjs.Models.Common
     public class Ticks
     {
         /// <summary>
+        /// Gets or sets the maximum .
+        /// </summary>
+        /// <value>
+        /// The maximum value.
+        /// </value>
+        [JsonPropertyName("max")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public int? Max { get; set; }
+        /// <summary>
+        /// Gets or sets the minimum.
+        /// </summary>
+        /// <value>
+        /// The minimum rotation.
+        /// </value>
+        [JsonPropertyName("min")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public int? Min { get; set; }
+        /// <summary>
         /// Gets or sets the maximum rotation.
         /// </summary>
         /// <value>
